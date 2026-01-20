@@ -1,0 +1,20 @@
+﻿    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+}
+
+/* 閸斻劎鏁炬晶鐐插繁 */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.donation-sidebar.open .donation-content {
+  animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}

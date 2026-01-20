@@ -268,6 +268,50 @@ if ('ontouchstart' in window) {
   });
 }
 
+// 打赏边栏功能
+function initDonationSidebar() {
+  const donationSidebar = document.querySelector('.donation-sidebar');
+  const donationToggle = document.querySelector('.donation-toggle');
+  const donationClose = document.querySelector('.donation-close');
+
+  if (!donationSidebar || !donationToggle) return;
+
+  // 点击触发按钮显示边栏
+  donationToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    donationSidebar.classList.toggle('open');
+  });
+
+  // 点击关闭按钮隐藏边栏
+  if (donationClose) {
+    donationClose.addEventListener('click', function() {
+      donationSidebar.classList.remove('open');
+    });
+  }
+
+  // 点击边栏外部区域关闭边栏
+  document.addEventListener('click', function(e) {
+    if (!donationSidebar.contains(e.target) && !donationToggle.contains(e.target)) {
+      donationSidebar.classList.remove('open');
+    }
+  });
+
+  // ESC键关闭边栏
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && donationSidebar.classList.contains('open')) {
+      donationSidebar.classList.remove('open');
+    }
+  });
+
+  // 防止边栏内容区域的点击冒泡
+  const donationContent = document.querySelector('.donation-content');
+  if (donationContent) {
+    donationContent.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+}
+
 // 性能监控
 function initPerformanceMonitoring() {
   // Core Web Vitals 监控
@@ -292,6 +336,9 @@ document.addEventListener('visibilitychange', () => {
     document.body.classList.remove('page-hidden');
   }
 });
+
+// 初始化打赏边栏
+initDonationSidebar();
 
 // 初始化性能监控
 initPerformanceMonitoring();

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
 </head>
 <body>
@@ -22,6 +22,7 @@
                 <li><a href="../index.html">首页</a></li>
                 <li><a href="../posts/index.html">文章</a></li>
                 <li><a href="about.html">关于</a></li>
+                <li><a href="autobiography.html">自传</a></li>
                 <li><a href="contact.html">联系</a></li>
             </ul>
             <div class="hamburger">
@@ -44,81 +45,145 @@
             </section>
 
             <!-- 联系方式 -->
-            <section class="contact-content" style="max-width: 1000px; margin: 0 auto; padding: 0 0 4rem;">
-                <div class="article-content">
-                    <h2>各种联系方式</h2>
+            <section class="container" style="padding: 5rem 0;">
+                <div style="max-width: 1200px; margin: 0 auto;">
 
-                    <p>如果你对我的文章有兴趣，或者想和我交流任何话题，欢迎通过以下方式联系我。我很乐意听到你的反馈和建议！</p>
+                    <!-- 联系卡片区域 -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem; margin-bottom: 4rem;">
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-                        <!-- 邮箱 -->
-                        <div style="text-align: center; padding: 2rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: #fff;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">✉️</div>
-                            <h3>邮箱</h3>
-                            <p style="color: var(--medium-gray); margin: 1rem 0;">发送邮件给我</p>
-                            <a href="mailto:your-email@example.com" style="color: var(--secondary-color); text-decoration: none; font-weight: 500;">your-email@example.com</a>
-                        </div>
+                        <!-- 联系信息卡片 -->
+                        <div style="background: #fff; padding: 3rem 2rem; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-color); position: relative; overflow: hidden;">
+                            <!-- 装饰性背景 -->
+                            <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, rgba(52, 152, 219, 0.03) 0%, rgba(52, 152, 219, 0.01) 100%); border-radius: 50%;"></div>
 
-                        <!-- 微信 -->
-                        <div style="text-align: center; padding: 2rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: #fff;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">💬</div>
-                            <h3>微信</h3>
-                            <p style="color: var(--medium-gray); margin: 1rem 0;">扫描二维码添加好友</p>
-                            <div style="background-color: var(--light-gray); width: 120px; height: 120px; margin: 0 auto; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                <span style="color: var(--medium-gray);">二维码</span>
+                            <div style="position: relative; z-index: 1;">
+                                <!-- 图标 -->
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2rem; color: #fff; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);">
+                                    📧
+                                </div>
+
+                                <h3 style="font-size: 1.8rem; font-weight: 600; color: var(--primary-color); margin-bottom: 1rem; text-align: center;">邮箱联系</h3>
+                                <p style="color: var(--medium-gray); margin-bottom: 2.5rem; line-height: 1.7; text-align: center;">发送邮件给我们，我们会在24小时内回复</p>
+
+                                <!-- 邮箱地址 -->
+                                <div style="background: linear-gradient(135deg, var(--light-gray) 0%, #f8f9fa 100%); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; border: 1px solid var(--border-color);">
+                                    <div style="font-family: 'Courier New', monospace; font-size: 1rem; font-weight: 600; color: var(--primary-color); text-align: center; word-break: break-all;">
+                                        chaozhi.yin@kiwiar.com
+                                    </div>
+                                </div>
+
+                                <!-- 联系按钮 -->
+                                <a href="mailto:chaozhi.yin@kiwiar.com" style="display: inline-block; width: 100%; background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%); color: #fff; padding: 1rem 2rem; border-radius: 12px; text-decoration: none; font-weight: 600; text-align: center; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                                    ✉️ 发送邮件
+                                </a>
                             </div>
                         </div>
 
-                        <!-- 微博 -->
-                        <div style="text-align: center; padding: 2rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: #fff;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
-                            <h3>微博</h3>
-                            <p style="color: var(--medium-gray); margin: 1rem 0;">关注我的微博</p>
-                            <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 500;">@NuHoay的微博</a>
-                        </div>
+                        <!-- 微信联系卡片 -->
+                        <div style="background: #fff; padding: 3rem 2rem; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-color); position: relative; overflow: hidden;">
+                            <!-- 装饰性背景 -->
+                            <div style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: linear-gradient(135deg, rgba(7, 196, 80, 0.03) 0%, rgba(0, 168, 89, 0.01) 100%); border-radius: 50%;"></div>
 
-                        <!-- GitHub -->
-                        <div style="text-align: center; padding: 2rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: #fff;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">💻</div>
-                            <h3>GitHub</h3>
-                            <p style="color: var(--medium-gray); margin: 1rem 0;">查看我的代码和项目</p>
-                            <a href="https://github.com/nuhoay" style="color: var(--secondary-color); text-decoration: none; font-weight: 500;">github.com/nuhoay</a>
+                            <div style="position: relative; z-index: 1;">
+                                <!-- 图标 -->
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #07C160 0%, #00A857 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2rem; color: #fff; box-shadow: 0 8px 25px rgba(7, 196, 80, 0.3);">
+                                    💬
+                                </div>
+
+                                <h3 style="font-size: 1.8rem; font-weight: 600; color: var(--primary-color); margin-bottom: 1rem; text-align: center;">微信联系</h3>
+                                <p style="color: var(--medium-gray); margin-bottom: 2.5rem; line-height: 1.7; text-align: center;">扫描二维码添加好友，随时交流</p>
+
+                                <!-- 二维码容器 -->
+                                <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                                    <div style="background: #fff; padding: 1rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 2px solid #f0f0f0;">
+                                        <img src="../assets/images/wechat-qr.jpg" alt="微信二维码" style="width: 140px; height: 140px; border-radius: 8px; display: block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <div style="width: 140px; height: 140px; border-radius: 8px; display: none; align-items: center; justify-content: center; background: var(--light-gray);">
+                                            <div style="text-align: center; color: var(--medium-gray);">
+                                                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📷</div>
+                                                <div style="font-size: 0.8rem;">二维码加载中</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 提示文字 -->
+                                <p style="text-align: center; color: var(--medium-gray); font-size: 0.9rem;">
+                                    <strong>扫描上方二维码</strong><br>
+                                    或搜索微信号添加好友
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <h3>留言给我</h3>
-
-                    <p>如果你想留下更详细的留言，可以通过以下表单联系我：</p>
-
-                    <form style="max-width: 600px; margin: 2rem auto; padding: 2rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: #fff;">
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">姓名</label>
-                            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; font-size: 1rem;">
+                    <!-- 留言表单区域 -->
+                    <div style="background: #fff; border-radius: 20px; padding: 4rem 3rem; box-shadow: 0 15px 50px rgba(0,0,0,0.1); border: 1px solid var(--border-color);">
+                        <div style="text-align: center; margin-bottom: 3rem;">
+                            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2rem; color: #fff; box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3);">
+                                💌
+                            </div>
+                            <h3 style="font-size: 2rem; font-weight: 600; color: var(--primary-color); margin-bottom: 1rem;">发送留言</h3>
+                            <p style="font-size: 1.1rem; color: var(--medium-gray); max-width: 500px; margin: 0 auto;">请填写下面的表单，我们会尽快回复您</p>
                         </div>
 
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">邮箱</label>
-                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; font-size: 1rem;">
+                        <form action="https://formspree.io/f/mqeeldye" method="POST" style="max-width: 600px; margin: 0 auto;">
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                                <!-- 姓名 -->
+                                <div>
+                                    <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-color); font-size: 0.95rem;">姓名 *</label>
+                                    <input type="text" name="name" id="name" required style="width: 100%; padding: 0.875rem; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 1rem; transition: border-color 0.3s ease; background: #fafafa;" onfocus="this.style.borderColor='var(--secondary-color)'; this.style.background='#fff'" onblur="this.style.borderColor='#e1e5e9'; this.style.background='#fafafa'">
+                                </div>
+
+                                <!-- 邮箱 -->
+                                <div>
+                                    <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-color); font-size: 0.95rem;">邮箱 *</label>
+                                    <input type="email" name="_replyto" id="email" required style="width: 100%; padding: 0.875rem; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 1rem; transition: border-color 0.3s ease; background: #fafafa;" onfocus="this.style.borderColor='var(--secondary-color)'; this.style.background='#fff'" onblur="this.style.borderColor='#e1e5e9'; this.style.background='#fafafa'">
+                                </div>
+                            </div>
+
+                            <!-- 留言内容 -->
+                            <div style="margin-bottom: 2rem;">
+                                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-color); font-size: 0.95rem;">留言内容 *</label>
+                                <textarea name="message" id="message" rows="6" required style="width: 100%; padding: 0.875rem; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 1rem; resize: vertical; transition: border-color 0.3s ease; background: #fafafa; font-family: inherit;" onfocus="this.style.borderColor='var(--secondary-color)'; this.style.background='#fff'" onblur="this.style.borderColor='#e1e5e9'; this.style.background='#fafafa'" placeholder="请详细描述您的需求、建议或想了解的问题..."></textarea>
+                            </div>
+
+                            <!-- 防止垃圾邮件 -->
+                            <input type="hidden" name="_next" value="https://nuhoay.github.io/pages/contact.html?success=true">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_gotcha" style="display:none">
+
+                            <!-- 提交按钮 -->
+                            <div style="text-align: center;">
+                                <button type="submit" id="submit-btn" style="background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%); color: #fff; border: none; padding: 1rem 3rem; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3); transition: all 0.3s ease; min-width: 200px;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(52, 152, 219, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(52, 152, 219, 0.3)'">
+                                    🚀 发送留言
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- 提交状态提示 -->
+                        <div id="form-status" style="margin-top: 2rem; text-align: center; display: none;">
+                            <div id="success-message" style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); color: #155724; padding: 1.5rem; border-radius: 12px; border: 2px solid #28a745; display: none; box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2); margin-bottom: 1rem;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
+                                <strong>留言发送成功！</strong><br>
+                                感谢您的留言，我们会尽快通过邮件回复您。
+                            </div>
+                            <div id="error-message" style="background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%); color: #721c24; padding: 1.5rem; border-radius: 12px; border: 2px solid #dc3545; display: none; box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2); margin-bottom: 1rem;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">❌</div>
+                                <strong>发送失败</strong><br>
+                                请稍后重试或直接通过邮箱/微信联系我们。
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
 
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">主题</label>
-                            <input type="text" id="subject" name="subject" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; font-size: 1rem;">
-                        </div>
+                    <h3>其他联系方式</h3>
 
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">留言内容</label>
-                            <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; font-size: 1rem; resize: vertical;"></textarea>
-                        </div>
-
-                        <button type="submit" style="background-color: var(--secondary-color); color: #fff; border: none; padding: 0.75rem 2rem; border-radius: 6px; font-size: 1rem; font-weight: 500; cursor: pointer; transition: var(--transition);">
-                            发送留言
-                        </button>
-                    </form>
-
-                    <h3>其他方式</h3>
-
-                    <p>除了以上联系方式，你也可以在我的文章下方留下评论，我们可以在那里交流。</p>
+                    <p>除了留言表单，你也可以：</p>
+                    <ul>
+                        <li>📧 直接发送邮件到上方邮箱地址</li>
+                        <li>💬 在我的文章下方留下评论</li>
+                        <li>🐙 通过GitHub联系我</li>
+                    </ul>
 
                     <p>感谢你愿意花时间联系我！期待与你的交流。</p>
                 </div>
@@ -143,16 +208,15 @@
                         <a href="../index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">首页</a> |
                         <a href="../posts/index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">文章</a> |
                         <a href="about.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">关于</a> |
+                        <a href="autobiography.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">自传</a> |
                         <a href="contact.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">联系</a>
                     </p>
                 </div>
                 <div class="footer-section">
-                    <h3>关注我</h3>
+                    <h3>联系我</h3>
                     <div class="social-links">
-                        <a href="#" title="微信">💬</a>
-                        <a href="#" title="微博">📱</a>
-                        <a href="#" title="GitHub">💻</a>
-                        <a href="#" title="邮件">✉️</a>
+                        <a href="mailto:chaozhi.yin@kiwiar.com" title="邮箱">✉️</a>
+                        <a href="#wechat-qr" title="微信" onclick="document.querySelector('.hero').scrollIntoView({behavior: 'smooth'});">💬</a>
                     </div>
                 </div>
             </div>
@@ -162,18 +226,55 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script>
+        // 检查URL参数显示成功消息
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                showMessage('success');
+            }
+        });
+
         // 表单提交处理
         document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
+            // 不阻止默认提交，让Formspree处理
+            const submitBtn = document.getElementById('submit-btn');
+            const originalText = submitBtn.textContent;
 
-            // 这里可以添加表单验证和提交逻辑
-            alert('感谢您的留言！我会尽快回复您。');
+            // 显示提交中状态
+            submitBtn.textContent = '发送中...';
+            submitBtn.disabled = true;
+            submitBtn.style.backgroundColor = '#6c757d';
 
-            // 重置表单
-            this.reset();
+            // 3秒后恢复按钮状态（以防提交失败）
+            setTimeout(function() {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.backgroundColor = '';
+            }, 3000);
         });
+
+        function showMessage(type) {
+            const statusDiv = document.getElementById('form-status');
+            const successMsg = document.getElementById('success-message');
+            const errorMsg = document.getElementById('error-message');
+
+            statusDiv.style.display = 'block';
+
+            if (type === 'success') {
+                successMsg.style.display = 'block';
+                errorMsg.style.display = 'none';
+            } else {
+                successMsg.style.display = 'none';
+                errorMsg.style.display = 'block';
+            }
+
+            // 5秒后自动隐藏
+            setTimeout(function() {
+                statusDiv.style.display = 'none';
+            }, 5000);
+        }
     </script>
 </body>
 </html>

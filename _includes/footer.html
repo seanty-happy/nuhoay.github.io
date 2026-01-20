@@ -1,6 +1,53 @@
 <!-- 返回顶部按钮 -->
 <div class="back-to-top">↑</div>
 
+<!-- 打赏边栏 -->
+<div class="donation-sidebar">
+    <div class="donation-toggle">
+        <span>💰</span>
+        <span>打赏</span>
+    </div>
+    <div class="donation-content">
+        <div class="donation-header">
+            <h4>感谢支持</h4>
+            <button class="donation-close">×</button>
+        </div>
+        <div class="donation-methods">
+            <div class="donation-method">
+                <div class="method-icon">💬</div>
+                <h5>微信支付</h5>
+                <div class="qr-container">
+                    <img src="assets/images/wechat-pay.jpg" alt="微信收款码" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div style="width: 120px; height: 120px; border-radius: 8px; display: none; align-items: center; justify-content: center; background: var(--light-gray); border: 2px dashed var(--border-color);">
+                        <div style="text-align: center; color: var(--medium-gray);">
+                            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📷</div>
+                            <div style="font-size: 0.8rem;">收款码待上传</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="donation-method">
+                <div class="method-icon">💰</div>
+                <h5>支付宝</h5>
+                <div class="qr-container">
+                    <img src="assets/images/alipay.jpg" alt="支付宝收款码" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div style="width: 120px; height: 120px; border-radius: 8px; display: none; align-items: center; justify-content: center; background: var(--light-gray); border: 2px dashed var(--border-color);">
+                        <div style="text-align: center; color: var(--medium-gray);">
+                            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📷</div>
+                            <div style="font-size: 0.8rem;">收款码待上传</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="donation-footer">
+            <p style="font-size: 0.8rem; color: var(--medium-gray); text-align: center;">
+                您的支持是我继续创作的动力
+            </p>
+        </div>
+    </div>
+</div>
+
 <!-- 页脚 -->
 <footer class="footer">
     <div class="container">
@@ -15,16 +62,15 @@
                     <a href="{{ '/' | relative_url }}" style="color: rgba(255,255,255,0.8); text-decoration: none;">首页</a> |
                     <a href="{{ '/posts/' | relative_url }}" style="color: rgba(255,255,255,0.8); text-decoration: none;">文章</a> |
                     <a href="{{ '/pages/about.html' | relative_url }}" style="color: rgba(255,255,255,0.8); text-decoration: none;">关于</a> |
+                    <a href="{{ '/pages/autobiography.html' | relative_url }}" style="color: rgba(255,255,255,0.8); text-decoration: none;">自传</a> |
                     <a href="{{ '/pages/contact.html' | relative_url }}" style="color: rgba(255,255,255,0.8); text-decoration: none;">联系</a>
                 </p>
             </div>
             <div class="footer-section">
-                <h3>关注我</h3>
+                <h3>联系我</h3>
                 <div class="social-links">
-                    <a href="#" title="微信">💬</a>
-                    <a href="#" title="微博">📱</a>
-                    <a href="#" title="GitHub">💻</a>
-                    <a href="#" title="邮件">✉️</a>
+                    <a href="mailto:chaozhi.yin@kiwiar.com" title="邮箱">✉️</a>
+                    <a href="{{ '/pages/contact.html#wechat-qr' | relative_url }}" title="微信">💬</a>
                 </div>
             </div>
         </div>
